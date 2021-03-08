@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-
 	<title>my website</title>
-
 <style type="text/css">
-	h1{font-family: 'UnifrakturMaguntia', cursive;}
-
-
-
-
-	#menu {
-
+	/*h1{font-family: 'UnifrakturMaguntia', cursive;}*/
+	
+	/*#menu {
 		width: 100%;
 		height: 50px;
 		border-top: 1px solid grey;
@@ -24,7 +19,6 @@
 		font-family: arial;
 		width: 24%;
 		height: 50px;
-		
 		display: inline-block;
 		position: relative;
 	}
@@ -32,28 +26,168 @@
 	.item:hover{
 		transition: 1s;
 		background-color: lightgrey;
+	}*/
+
+	#hallway1 {
+			width: 60%;
+			height: 3000px;
+			background-color: red;
+			background-image: url(file:///Users/jasperkarlson/Desktop/hallway.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: auto;
+	}
+
+	.TopBorder {
+		width: 100px;
+		height: 135px;
+	}
+
+	.LeftSign {
+		width: 500px;
+		height: 405px;
+		background-image: url(file:///Users/jasperkarlson/Desktop/finalSign1.png);
 
 	}
 
-	body{
-
-		margin: 0px;
-
+	.LeftDoor {
+		width: 1485px;
+		height: 1760px;
+		display: inline-block;
 	}
+
+	.SideBorder {
+		width: 37px;
+		height: 10px;
+		float: left;
+	}
+
+	.LeftOpenDoor {
+		height: 1535px;
+		width: 665px;
+		display: inline-block;
+		float: left;
+	}
+
+	.LeftOpenDoor:hover{
+		height: 2435px;
+		width: 665px;
+		display: inline-block;
+		float: left;
+		background-image: url(file:///Users/jasperkarlson/Desktop/OpenDoor1.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.MiddleDoor {
+		width: 682px;
+		height: 1000px;
+		display: inline-block;
+	}
+
+	.TopBorder1 {
+		width: 100px;
+		height: 270px;
+	}
+
+	.MiddleSign {
+		background-image: url(file:///Users/jasperkarlson/Desktop/finalSign3.png);
+		width: 350px;
+		height: 150px;
+	}
+
+	.MiddleOpenDoor {
+		width: 672px;
+		height: 668px;
+	}
+
+	.MiddleOpenDoor:hover {
+		width: 472px;
+		height: 668px;
+		background-image: url(file:///Users/jasperkarlson/Desktop/OpenDoor3.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.RightDoor {
+		width: 400px;
+		height: 1380px;
+		display: inline-block;
+	}
+
+	.TopBorder2 {
+		width: 100px;
+		height: 30px;
+	}
+
+	.RightSign {
+		background-image: url(file:///Users/jasperkarlson/Desktop/finalSign2.png); 
+		width: 400px;
+		height: 315px;
+	}
+
+	.RightOpenDoor {
+			height: 1105px;
+			width: 1000px;
+	}
+
+
+	.RightOpenDoor:hover {
+		width: 602px;
+		height: 1710px;
+		background-image: url(file:///Users/jasperkarlson/Desktop/OpenDoor4.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		float: left;
+	}
+		
+
 </style>
+
 </head>
 <body>
 	<center>
-		<h1>Jasper's Website</h1>
+		<h1></h1>
 	</center>
+
 	<div id="menu">
 
-		<div class=item>about</div>
-		<a href="journal.html"><div class=item>journal</div></a>
-		<a href="projects"><div class=item>projects</div></a>
-		<div class=item>blog</div>
+		<div class=item></div>
+		<a href="journal1.html"><div class=item></div></a>
+		<a href="projects1"><div class=item></div></a>
+		<div class=item></div>
 
 	</div>
+
+	<div id="hallway1">
+		<div class="LeftDoor">
+			<div class="TopBorder"></div>
+			<div class="LeftSign"></div>
+			<div class="SideBorder"></div>
+			<a href="aboutme.html"><div class="LeftOpenDoor"></div></a>
+		</div>
+
+		<div class="MiddleDoor">
+			<div class="TopBorder1"></div>
+			<div class="MiddleSign"></div>
+			<a href="journal.html"><div class="MiddleOpenDoor"></div></a>
+		</div>
+
+		<div class="RightDoor">
+			<div class="TopBorder2"></div>
+			<div class="RightSign"></div>
+			<a href="projects.html"><div class="RightOpenDoor"></div></a>
+		</div>
+	</div>
+
+<script type="text/javascript">
+	
+var aboutme = getElementById("LeftOpenDoor")
+
+document.addEventListener("")
+
+</script>
+
 
 </body>
 </html>

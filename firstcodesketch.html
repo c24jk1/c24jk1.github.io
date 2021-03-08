@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		#leftborder {
+			width: 255px;
+			height: 850px;
+			display: inline-block;
+			background-color: lightgreen;
+			float: left;
+		}
+
+		#leftborder1 {
+			width: 275px;
+			height: 255px;
+			display: inline-block;
+			background-color: green;
+			float: left;
+		}
+
+		#border1 {
+			width: 275px;
+			height: 100px;
+			font-size: 60px;
+		}
+
+		#bob {
+			width: 850px;
+			height: 850px;
+			background-color: grey;
+			display: inline-block;
+		}
+
+		#frog {
+			background-image: url(file:///Users/jasperkarlson/Desktop/frog.png);
+			width: 850px;
+			height: 850px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#rightborder {
+			width: 319px;
+			height: 850px;
+			display: inline-block;
+			background-color: lightgreen;
+			float: right;
+		}
+
+		#rightborder1 {
+			width: 350px;
+			height: 255px;
+			display: inline-block;
+			background-color: green;
+			float: right;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="leftborder">
+		<div id="leftborder1">
+			<div id="border1"></div>
+			<div id="border1">hover here</div>
+		</div>
+	</div>
+	<div id="bob">
+		<div id="frog"></div>
+	</div>
+
+	<script type="text/javascript">
+
+		var box = document.getElementById("bob");
+		box.style.backgroundColor = "rgb(200, 100, 100)";
+
+		document.addEventListener(
+			"mousemove", function(event){console.log(bob.style); 
+				bob.style.backgroundColor = "rgb("+ event.clientX + "," + event.clientY + "," + 0 + ")"
+			}
+			)
+	</script>
+
+	<div id="rightborder">
+		<div id="rightborder1"></div>
+	</div>
+
+	
+</body>
+</html>
