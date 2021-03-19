@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>adventure time</title>
+	<style type="text/css">
+		
+		#board {
+			width: 1000px;
+			height: 1000px;
+			background-image: url(https://ctl.s6img.com/society6/img/OndlMPORAaj0wyc5HLC8aKZFf6s/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/c6cfca4591cf47f9ba5f4f2108716395/~~/large-blue-checkerboard-pattern-prints.jpg);
+			background-size: cover;
+			position: center;
+		}
+
+		#bmo {
+			width: 110px;
+			height: 100px; 
+			background-image: url(bmo.png);
+			background-repeat: no-repeat;
+			background-color: lightblue;
+			display: inline-block;
+			background-size: contain;
+			position: absolute;
+		}
+
+	</style>
+</head>
+<body>
+
+<div id="board">
+	<div id="bmo"></div>
+</div>
+
+<script type="text/javascript">
+	
+
+
+document.addEventListener ("keydown", function position(w){
+
+	var bmo = document.getElementById("bmo");
+	bmo.style.left = event.clientX - 100 + "px";
+	bmo.style.top = event.clientY - 100 + "px";
+	coordinateX - 20 + "px";
+
+})
+
+
+</script>
+
+</body>
+</html>

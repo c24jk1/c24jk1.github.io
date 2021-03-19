@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#hummingbird {
+
+			width: 40px;
+			height: 30px;
+			background-image: url(https://i.pinimg.com/originals/39/ff/da/39ffda9c08ecbf827301f3211032fddd.gif);
+			background-size: cover;
+			display: inline-block;
+		}
+
+	</style>
+</head>
+<body>
+
+<div></div>
+
+	<script type="text/javascript">
+		
+var counter = 0;
+
+function makeHummingbird () {
+
+var hummingbird = document.createElement("div");
+document.body.appendChild(hummingbird);
+hummingbird.id = "hummingbird";
+counter = counter +1;
+
+}
+
+document.addEventListener("click", makeHummingbird)
+
+makeHummingbird();
+
+
+
+
+	</script>
+
+</body>
+</html>
