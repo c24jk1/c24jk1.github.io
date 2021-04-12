@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#background {
+			width: 1422px;
+			height: 648px;
+			background-image: url(road.jpg);
+			background-color: lightblue;
+			background-size: contain;
+
+		}
+
+		#topborder {
+			width: 100px;
+			height: 20px;
+		}
+
+		#person {
+			width: 100px;
+			height: 150px;
+			margin: auto;
+			float: right;
+			position: relative; 
+
+			animation-name: slide;
+			animation-duration: .5s;
+			animation-iteration-count: infinite;
+		}
+
+		#body {
+			width: 140px;
+			height: 155px;
+			background-image: url(stick1.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#top {
+			width: 1px;
+			height: 25px;
+		}
+
+		#arm {
+			width: 80px;
+			height: 80px;
+			background-size: contain;
+			background-image: url(arms.png);
+			background-repeat: no-repeat;
+			position: relative;
+			margin: auto;
+
+			animation-name: spin;
+			animation-duration: .2s;
+			animation-iteration-count: infinite;
+		}
+
+		#leg {
+			width: 80px;
+			height: 70px;
+			background-size: contain;
+			background-image: url(leegs.png);
+			background-repeat: no-repeat;
+			position: relative;
+			margin: auto;
+
+			animation-name: rotate;
+			animation-duration: .2s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes slide {
+			0%{top: 0px;}
+
+			100%{top: 300px;}
+		}
+
+		@keyframes spin {
+			0% {transform: rotate(180deg);}
+		}
+
+		@keyframes rotate {
+			0% {transform: rotate(180deg);}
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="background">
+		<div id="topborder"></div>
+		<div id="person">
+			<div id="body">
+				<div id="top"></div>
+				<div id="arm"></div>
+				<div id="leg"></div>
+			</div>
+		
+		</div>
+	</div>
+
+</body>
+</html>
