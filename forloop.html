@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		.turkey {
+			width: 100px;
+			height: 100px;
+			background-image: url(turkey.png);
+			background-size: contain;
+			background-color: lightpink;
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin: 10px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<center><h1>This is my turkey timer</h1></center>
+	
+	<script type="text/javascript">
+		
+		function makeBird (x){
+
+			var rabbit = document.createElement("div");
+			rabbit.classList.add('turkey');
+			document.body.appendChild(rabbit);
+
+			rabbit.innerText=x;
+
+		}
+
+		for (var counter = 0; counter<99; counter = counter + 1) {makeBird(counter)}
+
+	</script>
+
+</body>
+</html>

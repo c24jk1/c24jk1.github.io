@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#paths {
+			width: 200px;
+			height: 115px;
+			background-color: lightblue;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-image: url(stick.png);	
+		}
+
+	</style>
+</head>
+<body>
+
+	<center>
+		<h2>jasper's favorite routes</h2>
+
+		<div id="paths"></div>
+	</center>
+
+	<script type="text/javascript">
+		
+		var box = document.getElementById("paths");
+
+		var routes = 
+		["url(https://i.kym-cdn.com/entries/icons/facebook/000/026/747/0838B190-D604-477D-B7FE-6DAC4A238B45.jpg)", 
+
+		"url(https://i.ytimg.com/vi/wHP8GC6PGTU/hqdefault.jpg)",
+
+		"url(https://i.pinimg.com/originals/7d/e5/97/7de5977237d0ba6f19ed062e6425bcc0.jpg)",
+
+		"url(https://static.wikia.nocookie.net/theregularshow/images/c/ce/Mordecai_And_The_Rigbys.png/revision/latest?cb=20180719151547)",
+
+		"url(https://i.ytimg.com/vi/LsRTtjqmn0I/maxresdefault.jpg)",
+
+		"url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaekX00V6daa8lEkL1hS-GUEqtgpyWBI43t-pv93QQKl0uJhtJYZQHYcmd7w6w3urhuAI&usqp=CAU)",
+
+		"url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakWBCmCRD2x5s0CztDUSsHWmZfP1RhX6zog&usqp=CAU)",];
+
+
+		box.addEventListener("click", function(){var randomNumber = Math.round(6*Math.random())
+			console.log(routes[randomNumber]);
+
+		})
+
+	</script>
+
+
+</body>
+</html>
