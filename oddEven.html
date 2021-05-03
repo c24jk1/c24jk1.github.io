@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>change image</title>
+
+	<style type="text/css">
+		
+		#food {
+			width: 200px;
+			height: 200px;
+			background-color: lightyellow;
+			background-size: cover;
+			border: 1px solid black;
+		}
+
+		
+
+	</style>
+
+</head>
+<body>
+
+	<center><div id="food"></div></center>
+
+	
+
+	<script type="text/javascript">
+	
+		var box = document.getElementById("food")
+
+		var counter = 0;
+
+
+
+		box.addEventListener("click", function(){
+			console.log(counter = counter + 1)
+
+
+		if (counter%2 == 0) {
+			console.log ("even!")
+		}
+
+		if (counter%2 == 1) {
+			console.log ("odd!")
+		}
+
+
+
+		})
+
+	</script>
+
+</body>
+</html>
