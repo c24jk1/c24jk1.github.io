@@ -6,11 +6,13 @@
 	<style type="text/css">
 		
 		#food {
-			width: 200px;
+			width: 280px;
 			height: 200px;
 			background-color: lightyellow;
 			background-size: cover;
 			border: 1px solid black;
+			background-size: contain;
+			background-repeat: no-repeat;
 		}
 
 		
@@ -38,10 +40,12 @@
 
 		if (counter%2 == 0) {
 			console.log ("even!")
+			box.style.backgroundImage = "url(cannoli.png)"
 		}
 
 		if (counter%2 == 1) {
 			console.log ("odd!")
+			box.style.backgroundImage = "url(dumpling.jpg)"
 		}
 
 
