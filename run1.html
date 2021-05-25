@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#word {
+			width: 100%;
+			height: 100px;
+			font-size: 24px;
+			font-family: 'Cutive Mono', monospace;
+			border-width: 15px;
+			background-color: black;
+		}
+
+		#background {
+			width: 1422px;
+			height: 648px;
+			background-image: url(road.jpg);
+			background-color: lightblue;
+			background-size: contain;
+
+		}
+
+		#topborder {
+			width: 100px;
+			height: 400px;
+		}
+
+		#person {
+			width: 100px;
+			height: 150px;
+			margin: auto;
+			float: right;
+			position: relative; 
+
+			animation-name: slide;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+
+		#body {
+			width: 140px;
+			height: 155px;
+			background-image: url(stick1.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		#top {
+			width: 1px;
+			height: 25px;
+		}
+
+		#arm {
+			width: 80px;
+			height: 80px;
+			background-size: contain;
+			background-image: url(arms.png);
+			background-repeat: no-repeat;
+			position: relative;
+			margin: auto;
+
+			animation-name: spin;
+			animation-duration: .2s;
+			animation-iteration-count: infinite;
+		}
+
+		#leg {
+			width: 80px;
+			height: 70px;
+			background-size: contain;
+			background-image: url(leegs.png);
+			background-repeat: no-repeat;
+			position: relative;
+			margin: auto;
+
+			animation-name: rotate;
+			animation-duration: .2s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes slide {
+			0%{right: 0px;}
+
+			100%{right: 1300px;}
+		}
+
+		@keyframes spin {
+			0% {transform: rotate(180deg);}
+		}
+
+		@keyframes rotate {
+			0% {transform: rotate(180deg);}
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<center><div style="color:white;" id="word">You were correct! You see Molly run across a park. You call out to her, "what are you doing!" She finally responds to you. She says, "follow me for a gift! Click on me to figure it out."</div></center>
+
+	<div id="background">
+		<div id="topborder"></div>
+		<div id="person">
+			<a href="forloop1.html"><div id="body">
+				<div id="top"></div>
+				<div id="arm"></div>
+				<div id="leg"></div>
+			</div></a>
+		
+		</div>
+	</div>
+
+</body>
+</html>
