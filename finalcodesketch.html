@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bye cs1</title>
+
+	<style type="text/css">
+		
+		#title {
+			width: 95.5%;
+			height: 66px;
+			background-color: hotpink;
+			font-size: 50px;
+			padding: 34px;
+		}
+
+		/*#background {
+			width: 100%;
+			height: 700px;
+			background-color: pink;
+		}*/
+
+
+
+		/*#b {
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+			background-image: url(cake.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		#c {
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			background-image: url(hat.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		#d {
+			width: 100px;
+			height: 100px;
+			background-color: lightgreen;
+			background-image: url(star.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		#e {
+			width: 100px;
+			height: 100px;
+			background-color: lightblue;
+			background-image: url(present.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		#f {
+			width: 100px;
+			height: 100px;
+			background-color: violet;
+			background-image: url(comp.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}*/
+		
+
+	</style>
+
+</head>
+<body>
+
+	<center><div id="title">Goodbye CS1!!!</div> 
+	<div id="background">
+		<div id="a"></div>
+		<div id="b"></div>
+		<div id="c"></div>
+		<div id="d"></div>
+		<div id="e"></div>
+		<div id="f"></div>
+	</div></center>
+
+	<script type="text/javascript">
+		
+
+		var holiday = ["url(streamer.png)", 
+		"url(cake.png)", "url(hat.png)", "url(star.png)", "url(present.png)", "url(comp.png)"];
+
+		var color = ["red", 
+		"orange", "yellow", "lightgreen", "lightblue", "violet"];
+
+		document.addEventListener("click", function(event){
+		console.log(event)
+
+		var a = document.createElement("div");
+document.body.appendChild(a);
+
+			var randomNumber = Math.round(5*Math.random())
+
+			var randomNumber1 = Math.round(5*Math.random())
+
+			a.style.backgroundImage = holiday[randomNumber];
+			a.style.width = "150px";
+			a.style.height = "150px";
+			a.style.backgroundSize = "cover"
+			a.style.backgroundRepeat = "no-repeat"
+			a.style.backgroundColor = color[randomNumber1]
+			a.style.top = event.clientY - 25+"px";
+			a.style.left = event.clientX - 25 +"px";
+			a.style.position = "absolute"
+
+			console.log(randomNumber);
+		})
+
+	</script>
+
+</body>
+</html>
